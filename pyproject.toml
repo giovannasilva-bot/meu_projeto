@@ -1,0 +1,24 @@
+[project]
+name = "meu-projeto"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Maria Giovanna Siqueira da Silva", email = "giovanna.silva@aluno.ufca.edu.br" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "requests>=2.34.2",
+]
+
+[project.scripts]
+meu-projeto = "meu_projeto:main"
+
+[build-system]
+requires = ["uv_build>=0.13.9,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]
